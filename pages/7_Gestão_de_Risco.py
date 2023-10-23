@@ -15,7 +15,7 @@ def main():
         st.markdown('Este aplicativo foi desenvolvido com a finalidade de facilitar a gestão de riscos para o mercado financeiro.')
     
     def beta():
-        start_date = st.date_input("Selecione a data inicial: ")
+        start_date = st.date_input("Selecione a data inicial:", datetime.date(2021, 1, 1))
         end_date = st.date_input("Selecione a data final: ")
         bench_name = "^BVSP"
         asset_name = st.text_input("Digite o ticker do ativo: ") + ".SA"
