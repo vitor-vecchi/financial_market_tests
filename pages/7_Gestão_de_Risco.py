@@ -15,12 +15,14 @@ def main():
         st.markdown('Este aplicativo foi desenvolvido com a finalidade de facilitar a gestão de riscos para o mercado financeiro.')
     
     def beta():
-        start_date = st.date_input("Selecione a data inicial:", datetime.date(2021, 1, 1))
-        end_date = st.date_input("Selecione a data final: ")
-        bench_name = "^BVSP"
-        asset_name = st.text_input("Digite o ticker do ativo: ") + ".SA"
-        if start_date and end_date and asset_name:
-            df = yf.download([asset_name, bench_name], start = start_date, end = end_date)["Adj Close"]
+        ticker_input = st.text_input("Digite o ticker do ativo: ")
+        ticker = ticker_input + '.SA'
+        
+        if ticker:
+            start_date = st.date_input("Selecione a data inicial:", datetime.date(2021, 1, 1))
+            end_date = st.date_input("Selecione a data final: ")
+            benchmark_name = "^BVSP"
+            df = yf.download([ticker, benchmark_name], start = start_date, end = end_date)["Adj Close"]
             df.columns=['Asset','Benchmark'];
             df.dropna(inplace=True)
     
