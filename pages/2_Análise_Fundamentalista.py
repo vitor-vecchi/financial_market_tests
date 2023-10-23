@@ -37,7 +37,7 @@ def main(stock):
             fin =  ticker_yf.income_stmt
             ebit = fin.loc['EBIT']
             ebit_avg = ebit.mean()
-            st.write("EBIT Médio - últimos 4 anos:", ebit_avg)
+            st.write(f"EBIT Médio - últimos 4 anos: R$ {ebit_avg:.2f}")
             st.write("\n")
 
             shares_Outs = float((inf['sharesOutstanding']))
@@ -46,7 +46,7 @@ def main(stock):
             earnings_yield_Ebit = ((ebit_avg / (shares_Outs * current_price)) * 100)
             est_price_to_Earnings = (current_price / est_fwd_EPS)
 
-            st.write("Earnings Yield do EBIT:", "%.3f" % earnings_yield_Ebit + "%")
+            st.write(f"Earnings Yield do EBIT: {earnings_yield_Ebit:.2f}%")
             st.write("LPA Estimado para 12 meses:", est_fwd_EPS)
             st.write("Earnings Yield Estimado:", "%.3f" % est_earnings_Yield + "%")
             st.write("PE Estimado:", "%.3f" % est_price_to_Earnings + "x")
