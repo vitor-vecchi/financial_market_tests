@@ -2,10 +2,10 @@ import streamlit as st
 from datetime import datetime, timedelta
 import yfinance as yf
 import pandas as pd
-import locale
+# import locale
 
 # Defina a localização para o Brasil
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+# locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
 
 st.title('Análise Fundamentalista de Ações')
 st.subheader('Indicadores relevantes')
@@ -29,8 +29,9 @@ def main(stock):
             qbs = ticker_yf.quarterly_balance_sheet
 
             current_price = float(inf['currentPrice'])
-            formatted_current_price = locale.currency(current_price, grouping=True)
-            st.write(f"Cotação atual:", formatted_current_price)
+            # formatted_current_price = locale.currency(current_price, grouping=True)
+            # st.write(f"Cotação atual:", formatted_current_price)
+            st.write(f"Cotação atual: R$ {[current_price:.2f]}")
             
             try:
                 long_term_debt_serie = bs.loc['Long Term Debt']
