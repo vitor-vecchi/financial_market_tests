@@ -1,0 +1,97 @@
+[
+    {
+        "Ticker": "CVBI11",
+        "Aloca\u00e7\u00e3o Alvo": 0.05,
+        "Segmento": "Receb\u00edveis"
+    },
+    {
+        "Ticker": "PORD11",
+        "Aloca\u00e7\u00e3o Alvo": 0.09,
+        "Segmento": "Receb\u00edveis"
+    },
+    {
+        "Ticker": "BTCI11",
+        "Aloca\u00e7\u00e3o Alvo": 0.05,
+        "Segmento": "Receb\u00edveis"
+    },
+    {
+        "Ticker": "HGLG11",
+        "Aloca\u00e7\u00e3o Alvo": 0.045,
+        "Segmento": "Log\u00edstico e Industrial"
+    },
+    {
+        "Ticker": "LVBI11",
+        "Aloca\u00e7\u00e3o Alvo": 0.05,
+        "Segmento": "Log\u00edstico e Industrial"
+    },
+    {
+        "Ticker": "BRCO11",
+        "Aloca\u00e7\u00e3o Alvo": 0.05,
+        "Segmento": "Log\u00edstico e Industrial"
+    },
+    {
+        "Ticker": "PATL11",
+        "Aloca\u00e7\u00e3o Alvo": 0.03,
+        "Segmento": "Log\u00edstico e Industrial"
+    },
+    {
+        "Ticker": "PVBI11",
+        "Aloca\u00e7\u00e3o Alvo": 0.065,
+        "Segmento": "Escrit\u00f3rios"
+    },
+    {
+        "Ticker": "AIEC11",
+        "Aloca\u00e7\u00e3o Alvo": 0.06,
+        "Segmento": "Escrit\u00f3rios"
+    },
+    {
+        "Ticker": "BRCR11",
+        "Aloca\u00e7\u00e3o Alvo": 0.04,
+        "Segmento": "Escrit\u00f3rios"
+    },
+    {
+        "Ticker": "JSRE11",
+        "Aloca\u00e7\u00e3o Alvo": 0.03,
+        "Segmento": "Escrit\u00f3rios"
+    },
+    {
+        "Ticker": "RBFF11",
+        "Aloca\u00e7\u00e3o Alvo": 0.04,
+        "Segmento": "Fundos de Fundos"
+    },
+    {
+        "Ticker": "BCIA11",
+        "Aloca\u00e7\u00e3o Alvo": 0.05,
+        "Segmento": "Fundos de Fundos"
+    },
+    {
+        "Ticker": "KFOF11",
+        "Aloca\u00e7\u00e3o Alvo": 0.05,
+        "Segmento": "Fundos de Fundos"
+    },
+    {
+        "Ticker": "HGRU11",
+        "Aloca\u00e7\u00e3o Alvo": 0.05,
+        "Segmento": "Renda Urbana"
+    },
+    {
+        "Ticker": "RBVA11",
+        "Aloca\u00e7\u00e3o Alvo": 0.04,
+        "Segmento": "Renda Urbana"
+    },
+    {
+        "Ticker": "XPML11",
+        "Aloca\u00e7\u00e3o Alvo": 0.1,
+        "Segmento": "Shoppings"
+    },
+    {
+        "Ticker": "VISC11",
+        "Aloca\u00e7\u00e3o Alvo": 0.04,
+        "Segmento": "Shoppings"
+    },
+    {
+        "Ticker": "CPTS11",
+        "Aloca\u00e7\u00e3o Alvo": 0.07,
+        "Segmento": "Receb\u00edveis"
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "Ticker": "B3SA3.SA",
+        "Quantidade": 17,
+        "Custo Total": 221.85
+    },
+    {
+        "Ticker": "BBAS3.SA",
+        "Quantidade": 51,
+        "Custo Total": 1517.25
+    },
+    {
+        "Ticker": "BBDC4.SA",
+        "Quantidade": 60.0,
+        "Custo Total": 982.80
+    },
+    {
+        "Ticker": "BBSE3.SA",
+        "Quantidade": 39.0,
+        "Custo Total": 861.51    
+	},
+    {
+        "Ticker": "BOVA11.SA",
+        "Quantidade": 6.0,
+        "Custo Total": 588.12
+    },
+    {
+        "Ticker": "CSMG3.SA",
+        "Quantidade": 115.0,
+        "Custo Total": 1642.20
+    },
+    {
+        "Ticker": "ELET3.SA",
+        "Quantidade": 22.0,
+        "Custo Total": 627.88
+    },
+    {
+        "Ticker": "ENAT3.SA",
+        "Quantidade": 14.0,
+        "Custo Total": 146.16
+    },
+    {
+        "Ticker": "FLRY3.SA",
+        "Quantidade": 156.0,
+        "Custo Total": 2803.32
+    },
+    {
+        "Ticker": "HYPE3.SA",
+        "Quantidade": 10.0,
+        "Custo Total": 296.70
+    },
+    {
+        "Ticker": "ITUB4.SA",
+        "Quantidade": 26.0,
+        "Custo Total": 638.56
+    },
+    {
+        "Ticker": "SANB11.SA",
+        "Quantidade": 5.0,
+        "Custo Total": 137.40
+    },
+    {
+        "Ticker": "SAPR4.SA",
+        "Quantidade": 275.0,
+        "Custo Total": 2803.32
+    },
+    {
+        "Ticker": "TAEE11.SA",
+        "Quantidade": 20.0,
+        "Custo Total": 566.80
+    },
+    {
+        "Ticker": "WEGE3.SA",
+        "Quantidade": 12.0,
+        "Custo Total": 364.32
+    },
+    {
+        "Ticker": "ITSA4.SA",
+        "Quantidade": 130.0,
+        "Custo Total": 1326.64
+    },
+    {
+        "Ticker": "RDOR3.SA",
+        "Quantidade": 32.0,
+        "Custo Total": 1504.51
+    }
+]

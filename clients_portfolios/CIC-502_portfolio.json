@@ -1,0 +1,27 @@
+[
+    {
+        "Ticker": "WIZC3.SA",
+        "Quantidade": 290,
+        "Custo Total": 2180.67
+    },
+    {
+        "Ticker": "VIVT3.SA",
+        "Quantidade": 153,
+        "Custo Total": 5969.81
+    },
+    {
+        "Ticker": "BBSE3.SA",
+        "Quantidade": 15.0,
+        "Custo Total": 255.0
+    },
+    {
+        "Ticker": "SOJA3.SA",
+        "Quantidade": 78.0,
+        "Custo Total": 1326.0
+    },
+    {
+        "Ticker": "AURA33.SA",
+        "Quantidade": 100.0,
+        "Custo Total": 3750.0
+    }
+]
