@@ -5,7 +5,7 @@ import pandas as pd
 import locale
 
 # Defina a localização para o Brasil
-locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 
 st.title('Análise Fundamentalista de Ações')
 st.subheader('Indicadores relevantes')
