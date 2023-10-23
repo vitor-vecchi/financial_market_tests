@@ -18,7 +18,7 @@ def main():
         ticker_input = st.text_input("Digite o ticker do ativo: ")
         ticker = ticker_input + '.SA'
         
-        if ticker:
+        if ticker_input:
             start_date = st.date_input("Selecione a data inicial:", datetime.date(2021, 1, 1))
             end_date = st.date_input("Selecione a data final: ")
             benchmark_name = "^BVSP"
