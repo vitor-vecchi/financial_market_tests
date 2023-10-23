@@ -2,6 +2,10 @@ import streamlit as st
 from datetime import datetime, timedelta
 import yfinance as yf
 import pandas as pd
+import locale
+
+# Defina a localização para o Brasil
+locale.setlocale(locale.LC_ALL, 'pt_BR')
 
 st.title('Análise Fundamentalista de Ações')
 st.subheader('Indicadores relevantes')
@@ -25,7 +29,8 @@ def main(stock):
             qbs = ticker_yf.quarterly_balance_sheet
 
             current_price = float(inf['currentPrice'])
-            st.write(f"Cotação atual: R$ {current_price:.2f}")
+            formatted_current_price = locale.currency(current_price, grouping=True)
+            st.write(f"Cotação atual:", formatted_current_price)
             
             try:
                 long_term_debt_serie = bs.loc['Long Term Debt']
@@ -37,7 +42,7 @@ def main(stock):
             fin =  ticker_yf.income_stmt
             ebit = fin.loc['EBIT']
             ebit_avg = ebit.mean()
-            st.write(f"EBIT Médio - últimos 4 anos: R$ {ebit_avg:.2f}")
+            st.write("EBIT Médio - últimos 4 anos:", ebit_avg)
             st.write("\n")
 
             shares_Outs = float((inf['sharesOutstanding']))
@@ -46,7 +51,7 @@ def main(stock):
             earnings_yield_Ebit = ((ebit_avg / (shares_Outs * current_price)) * 100)
             est_price_to_Earnings = (current_price / est_fwd_EPS)
 
-            st.write(f"Earnings Yield do EBIT: {earnings_yield_Ebit:.2f}%")
+            st.write("Earnings Yield do EBIT:", "%.3f" % earnings_yield_Ebit + "%")
             st.write("LPA Estimado para 12 meses:", est_fwd_EPS)
             st.write("Earnings Yield Estimado:", "%.3f" % est_earnings_Yield + "%")
             st.write("PE Estimado:", "%.3f" % est_price_to_Earnings + "x")
