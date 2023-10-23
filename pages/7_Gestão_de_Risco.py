@@ -19,19 +19,20 @@ def main():
         end_date = st.date_input("Selecione a data final: ")
         bench_name = "^BVSP"
         asset_name = st.text_input("Digite o ticker do ativo: ") + ".SA"
-        df = yf.download([asset_name, bench_name], start = start_date, end = end_date)["Adj Close"]
-        df.columns=['Asset','Benchmark'];
-        df.dropna(inplace=True)
-
-        df["% Benchmark"] = df["Benchmark"].pct_change()
-        df["% Asset"] = df["Asset"].pct_change()
-        df = df[1:]
-
-        def calc_beta():
-            beta = df["% Asset"].cov(df["% Benchmark"]) / df["% Benchmark"].var()
-            if st.button('Calcular beta'):
-                st.write(beta)
-        calc_beta()
+        if start_date and end_date and asset_name:
+            df = yf.download([asset_name, bench_name], start = start_date, end = end_date)["Adj Close"]
+            df.columns=['Asset','Benchmark'];
+            df.dropna(inplace=True)
+    
+            df["% Benchmark"] = df["Benchmark"].pct_change()
+            df["% Asset"] = df["Asset"].pct_change()
+            df = df[1:]
+    
+            def calc_beta():
+                beta = df["% Asset"].cov(df["% Benchmark"]) / df["% Benchmark"].var()
+                if st.button('Calcular beta'):
+                    st.write(beta)
+            calc_beta()
     if aplicacao == 'Gestão de Riscos':
         beta()
 main()
