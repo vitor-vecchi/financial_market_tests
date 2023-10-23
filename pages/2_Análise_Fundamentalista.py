@@ -25,7 +25,7 @@ def main(stock):
             qbs = ticker_yf.quarterly_balance_sheet
 
             current_price = float(inf['currentPrice'])
-            st.write(f"Cotação atual: R$ {[current_price:.2f]}")
+            st.write(f"Cotação atual: R$ {current_price:.2f}")
             
             try:
                 long_term_debt_serie = bs.loc['Long Term Debt']
